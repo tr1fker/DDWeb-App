@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/javaScript.js" defer></script>
+    <title>ImageHub</title>
+</head>
+<body>
+    <header>
+        ImageHub
+    </header>
+    <nav>
+        Выберите параметры:
+    </nav>
+    <div class="line">
+        <article>
+            <button onclick="openWindow()">
+                Результат
+            </button>
+            <section>
+                <img id="transport-image" src="../resources/car.jpg">
+            </section>
+        </article>
+        <div class="after-line">
+            <div class="list1" class="list">
+                <label for="imgSelector">Выберите картинку:</label>
+                <select id="imgSelector" onchange="showImage()">
+                    <option value="car">Машина</option>
+                    <option value="airplane">Самолёт</option>
+                    <option value="motorbike">Мотоцикл</option>
+                    <option value="tractor">Трактор</option>
+                    <option value="train">Поезд</option>
+                </select>
+            </div>
+            <div class="list2" class="list">
+                <label for="colSelector">Выберите цвет border:</label>
+                <select id="colSelector">
+                    <option value="green">Зелёный</option>
+                    <option value="red">Красный</option>
+                    <option value="yellow">Жёлтый</option>
+                    <option value="blue">Синий</option>
+                    <option value="pink">Розовый</option>
+                </select>
+            </div>
+            <div class="list3" class="list">
+                <label for="tranSelector">Выберите прозрачность:</label>
+                <select id="tranSelector">
+                    <option value="100%">100%</option>
+                    <option value="75%">75%</option>
+                    <option value="50%">50%</option>
+                    <option value="25%">25%</option>
+                    <option value="0%">0%</option>
+                </select>
+            </div>
+            <div class="list4" class="list">
+                <label for="titSelector">Выберите надпись:</label>
+                <select id="titSelector">
+                    <option value="Машина">Машина</option>
+                    <option value="Самолёт">Самолёт</option>
+                    <option value="Мотоцикл">Мотоцикл</option>
+                    <option value="Трактор">Трактор</option>
+                    <option value="Поезд">Поезд</option>
+                </select>
+            </div>
+            <div class="list5" class="list">
+                <label for="widSelector">Выберите ширину:</label>
+                <select id="widSelector">
+                    <option value="300px">300px</option>
+                    <option value="200px">200px</option>
+                    <option value="150px">150px</option>
+                    <option value="100px">100px</option>
+                    <option value="50px">50px</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <footer>
+        © 2025 ImageHub. Все права защищены.
+    </footer>
+</body>
+</html>
