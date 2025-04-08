@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Информация об автомобилях</title>
+  <script src="../js/javaScript.js"></script>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h2>Форма для заполнения информации об автомобилях</h2>
+  <form id="carForm">
+    <label>Серия автомобиля:
+      <input type="text" id="series" required>
+    </label>
+    <label>Дата выпуска:
+      <input type="date" id="releaseDate" required>
+    </label>
+    <label>Назначение:
+      <input type="text" id="purpose" required>
+    </label>
+    <label>Адрес производителя:
+      <input type="text" id="manufacturerAddress" required>
+    </label>
+    <label>Выберите ID для удаления:
+      <select id="recordSelect">
+        <option value="" disabled selected>Нет записей</option>
+      </select>
+    </label>
+    <button type="button" onclick="addRecord()">Ввести новую запись</button>
+    <button type="button" onclick="clearForm()">Очистить форму</button>
+    <button type="button" onclick="deleteRecord()">Удалить запись по ID</button>
+    <button type="button" onclick="showAddressesByPurpose()">Показать адреса по назначению</button>
+  </form>
+  <h3>Добавить новое свойство:</h3>
+  <input type="text" id="newProperty" placeholder="например: телефон: +123456">
+  <button onclick="addNewProperty()">Добавить свойство</button>
+  <p id="newPropertyDisplay"></p>
+  <table id="carTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Серия</th>
+        <th>Дата выпуска</th>
+        <th>Назначение</th>
+        <th>Адрес производителя</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</body>
+</html>
