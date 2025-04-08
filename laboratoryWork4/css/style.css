@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    align-content: center;
+    text-align: center;
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 244, 224);
+    height: 10vh;
+}
+
+.line{
+    display: flex;
+    height: 80vh;
+}
+
+nav{
+    background-color: rgb(249, 253, 227);
+    width: 20vw;
+}
+
+article{
+    color: rgb(54, 54, 54);
+    background-color: rgb(255, 255, 255);
+    width: 60vw;
+}
+
+.container{
+    padding: 30px;
+    background-color: rgb(228, 242, 255);
+    margin: 30px;
+    height: 68vh;
+    border-radius: 10px;
+}
+
+.nameInput, .dateInput,
+.checkboxInput, .listInput,
+.radioInput, .numberInput{
+    margin: 25px;
+}
+
+aside{
+    background-color: rgb(249, 253, 227);
+    width: 20vw;
+}
+
+aside div{
+    padding: 3px;
+    margin: 5px;
+    border: 3px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    background-color: rgb(249, 253, 227);
+    color: rgb(73, 73, 73);
+}
+
+footer{
+    align-content: center;
+    text-align: center;
+    background-color: rgb(88, 88, 88);
+    color: rgb(255, 244, 224);
+    height: 10vh;
+}
+
+table{
+    position: relative;
+    width: 100%;
+}
+
+table td{
+    padding: 5px;
+    border: 2px solid rgb(249, 253, 227);
+}
