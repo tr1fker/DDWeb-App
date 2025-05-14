@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Города России</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Города России</h1>
+        
+        <div id="original-page" class="page active">
+            <h2>Исходный список городов</h2>
+            <p>Список городов с возможными ошибками в написании (некоторые города начинаются с маленькой буквы):</p>
+            
+            <ul id="original-cities-list" class="cities-list">
+                <!-- Cities will be loaded here via JavaScript -->
+            </ul>
+            
+            <button id="process-button" class="btn">Исправить и отсортировать</button>
+        </div>
+        
+        <div id="processed-page" class="page">
+            <h2>Обработанный список городов</h2>
+            <p>Список городов после исправления и сортировки по алфавиту:</p>
+            
+            <ul id="processed-cities-list" class="cities-list">
+                <!-- Processed cities will be loaded here via JavaScript -->
+            </ul>
+            
+            <button id="back-button" class="btn">Вернуться к исходному списку</button>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html> 
