@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 7</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Конструктор блоков</h1>
+    </header>
+    
+    <main>
+        <section class="controls">
+            <h2>Настройки блоков</h2>
+            
+            <div class="control-group">
+                <label for="block-select">Выберите блок:</label>
+                <select id="block-select">
+                    <option value="block1">Блок 1</option>
+                    <option value="block2">Блок 2</option>
+                    <option value="block3">Блок 3</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="width-select">Ширина:</label>
+                <select id="width-select">
+                    <option value="200px">200px</option>
+                    <option value="300px">300px</option>
+                    <option value="400px">400px</option>
+                    <option value="500px">500px</option>
+                    <option value="600px">600px</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="height-select">Высота:</label>
+                <select id="height-select">
+                    <option value="150px">150px</option>
+                    <option value="200px">200px</option>
+                    <option value="250px">250px</option>
+                    <option value="300px">300px</option>
+                    <option value="350px">350px</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="bg-select">Фоновое изображение:</label>
+                <select id="bg-select">
+                    <option value="bg1.jpg">Фон 1</option>
+                    <option value="bg2.jpg">Фон 2</option>
+                    <option value="bg3.jpg">Фон 3</option>
+                    <option value="bg4.jpg">Фон 4</option>
+                    <option value="bg5.jpg">Фон 5</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="border-style-select">Стиль рамки:</label>
+                <select id="border-style-select">
+                    <option value="solid">Сплошная</option>
+                    <option value="dashed">Пунктирная</option>
+                    <option value="dotted">Точечная</option>
+                    <option value="double">Двойная</option>
+                    <option value="groove">Объемная</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="border-color-select">Цвет рамки:</label>
+                <select id="border-color-select">
+                    <option value="#ff5733">Красный</option>
+                    <option value="#33ff57">Зеленый</option>
+                    <option value="#3357ff">Синий</option>
+                    <option value="#f3ff33">Желтый</option>
+                    <option value="#33fff3">Голубой</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="border-width-select">Толщина рамки:</label>
+                <select id="border-width-select">
+                    <option value="1px">1px</option>
+                    <option value="2px">2px</option>
+                    <option value="3px">3px</option>
+                    <option value="4px">4px</option>
+                    <option value="5px">5px</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="title-select">Заголовок:</label>
+                <select id="title-select">
+                    <option value="Заголовок 1">Заголовок 1</option>
+                    <option value="Заголовок 2">Заголовок 2</option>
+                    <option value="Заголовок 3">Заголовок 3</option>
+                    <option value="Заголовок 4">Заголовок 4</option>
+                    <option value="Заголовок 5">Заголовок 5</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="text-select">Текст:</label>
+                <select id="text-select">
+                    <option value="Это текст первого параграфа. Здесь может быть ваше содержимое.">Текст 1</option>
+                    <option value="Это другой вариант текста для блока. Можно выбрать то, что вам нравится.">Текст 2</option>
+                    <option value="Третий вариант текста для вашего блока. Используйте то, что подходит вам.">Текст 3</option>
+                    <option value="Четвертый вариант текста с другим содержанием. Для разнообразия.">Текст 4</option>
+                    <option value="Пятый вариант текста. Выбирайте тот, который лучше подходит для вашего блока.">Текст 5</option>
+                </select>
+            </div>
+            
+            <button id="apply-button">Применить изменения</button>
+        </section>
+        
+        <section class="blocks-container">
+            <div id="block1" class="custom-block">
+                <h3>Заголовок 1</h3>
+                <p>Это текст первого параграфа. Здесь может быть ваше содержимое.</p>
+            </div>
+            
+            <div id="block2" class="custom-block">
+                <h3>Заголовок 2</h3>
+                <p>Это другой вариант текста для блока. Можно выбрать то, что вам нравится.</p>
+            </div>
+            
+            <div id="block3" class="custom-block">
+                <h3>Заголовок 3</h3>
+                <p>Третий вариант текста для вашего блока. Используйте то, что подходит вам.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Лабораторная работа 7</p>
+    </footer>
+    
+    <script src="../js/main.js"></script>
+</body>
+</html> 
