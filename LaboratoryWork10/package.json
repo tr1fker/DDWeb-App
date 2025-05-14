@@ -1,0 +1,12 @@
+{
+  "name": "city-name-processor",
+  "version": "1.0.0",
+  "description": "A Node.js application to process city names",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+} 

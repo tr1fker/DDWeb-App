@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обработка названий городов</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Обработка названий городов</h1>
+        
+        <div class="input-section">
+            <h2>Введите названия городов</h2>
+            <p>Введите названия городов, каждое с новой строки:</p>
+            <textarea id="citiesInput" rows="10" placeholder="москва&#10;санкт-петербург&#10;НОВОСИБИРСК&#10;екатеринбург"></textarea>
+            <button id="processCitiesBtn">Обработать</button>
+        </div>
+        
+        <div class="output-section">
+            <div class="output-column">
+                <h2>Исходный список</h2>
+                <button id="showOriginalBtn">Показать исходный список</button>
+                <div id="originalList" class="city-list"></div>
+            </div>
+            
+            <div class="output-column">
+                <h2>Обработанный список</h2>
+                <button id="showProcessedBtn">Показать обработанный список</button>
+                <div id="processedList" class="city-list"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
