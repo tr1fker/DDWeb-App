@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freight Transportation Services</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Freight Transportation Services</h1>
+    </header>
+
+    <main>
+        <div id="services-container"></div>
+
+        <div class="control-panel">
+            <h3>Add New Service</h3>
+            <div class="form-group">
+                <label for="service-list-select">Select list to add service:</label>
+                <select id="service-list-select">
+                    <option value="0">Construction Materials Transport</option>
+                    <option value="1">Office Relocation</option>
+                    <option value="2">Goods Delivery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="service-input">New service name:</label>
+                <input type="text" id="service-input">
+            </div>
+            <button id="add-service-btn">Add Service</button>
+
+            <h3>Add New Description</h3>
+            <div class="form-group">
+                <label for="desc-category-select">Select category:</label>
+                <select id="desc-category-select">
+                    <option value="0">Construction Materials Transport</option>
+                    <option value="1">Office Relocation</option>
+                    <option value="2">Goods Delivery</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="desc-position-select">Select position for description:</label>
+                <select id="desc-position-select">
+                    <option value="before">Before existing paragraph</option>
+                    <option value="after">After existing paragraph</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="desc-input">New description:</label>
+                <input type="text" id="desc-input">
+            </div>
+            <button id="add-desc-btn">Add Description</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Freight Transportation Services</p>
+    </footer>
+
+    <script src="../js/transportation.js"></script>
+</body>
+</html> 
