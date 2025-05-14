@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Викторина</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Викторина</h1>
+        
+        <div id="setup-section">
+            <h2>Настройка викторины</h2>
+            <div class="setup-form">
+                <label for="time-input">Время на ответ (секунды):</label>
+                <input type="number" id="time-input" min="5" max="60" value="20">
+                <button id="start-quiz">Начать викторину</button>
+            </div>
+        </div>
+        
+        <div id="quiz-section" class="hidden">
+            <div class="progress-container">
+                <div class="timer">
+                    <span id="timer-value">20</span> сек
+                </div>
+                <div class="question-counter">
+                    Вопрос <span id="current-question">1</span> из <span id="total-questions">10</span>
+                </div>
+            </div>
+            
+            <div class="quiz-content">
+                <div class="image-container">
+                    <img id="question-image" src="" alt="Изображение вопроса">
+                </div>
+                
+                <div class="question">
+                    <h3 id="question-text">Вопрос загружается...</h3>
+                </div>
+                
+                <div class="options">
+                    <div class="option">
+                        <input type="radio" id="option1" name="answer" value="0">
+                        <label for="option1" id="option1-text">Вариант 1</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="option2" name="answer" value="1">
+                        <label for="option2" id="option2-text">Вариант 2</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="option3" name="answer" value="2">
+                        <label for="option3" id="option3-text">Вариант 3</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" id="option4" name="answer" value="3">
+                        <label for="option4" id="option4-text">Вариант 4</label>
+                    </div>
+                </div>
+                
+                <button id="submit-answer" disabled>Ответить</button>
+            </div>
+        </div>
+        
+        <div id="result-section" class="hidden">
+            <h2>Результаты викторины</h2>
+            <div class="results">
+                <p>Правильных ответов: <span id="correct-count">0</span> из <span id="total-count">10</span></p>
+                <div id="result-details"></div>
+            </div>
+            <button id="show-answers">Показать правильные ответы</button>
+        </div>
+        
+        <div id="answers-section" class="hidden">
+            <h2>Правильные ответы</h2>
+            <div id="answers-container"></div>
+            <button id="restart-quiz">Начать заново</button>
+        </div>
+    </div>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html> 
